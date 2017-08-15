@@ -1,0 +1,6 @@
+#!/bin/bash
+sudo docker build -t dumb .
+sudo docker tag dumb stor.highloadcup.ru/travels/fluffy_quetzal
+sudo docker push stor.highloadcup.ru/travels/fluffy_quetzal
+#sudo docker cp /home/max/hlc/code/highload_r1/test_data/users_1.json hl_rp:/tmp/data/
+#sudo docker run --rm -p 8080:80 -t hl_rp

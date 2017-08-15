@@ -1,0 +1,6 @@
+#!/bin/bash
+/etc/init.d/postgresql start 
+psql -U postgres -a -f /root/highload_r1/src/postgres.sql
+tail /var/log/postgresql/postgresql-9.5-main.log
+/root/highload_r1/build/HighloadR1
+
